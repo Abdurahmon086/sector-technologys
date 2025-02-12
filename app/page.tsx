@@ -166,7 +166,7 @@ export default function Home() {
                         <div className="">
                             <Logo />
                             <div className="">
-                                <img src="/images/uz.png" alt="uzb flag" />
+                                <img src="/images/uzb.png" alt="uzb flag" />
                                 <p>Uz</p>
                             </div>
                             <div className="">
