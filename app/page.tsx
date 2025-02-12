@@ -1,21 +1,24 @@
-import CategoryCard from "@/components/share/logo";
+import CategoryCard from "@/components/cards/category-card";
 import { headerData } from "@/constants";
 
 export default function Home() {
     return (
         <div className="">
-            <div className="py-24">
+            <div className="py-14">
                 <section className="container">
-                    <div className="w-[1440px] h-[501px] bg-slate-400 rounded-[21px]"></div>
+                    <div className="w-full h-[501px] bg-slate-400 rounded-[21px]"></div>
                 </section>
-                <section className="container">
+                <section className="container mt-12">
                     <h3 className="main-title">Популярные категории</h3>
-                    <ul>
-                        {headerData.map((item) => (
-                            <li key={item.id}>
+                    <ul className="mt-7 grid grid-cols-6 gap-x-10 gap-y-[30px]">
+                        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((item) => (
+                            <li key={item}>
                                 <CategoryCard />
                             </li>
                         ))}
+                        <li>
+                            <CategoryCard last />
+                        </li>
                     </ul>
                 </section>
                 <section className="container">

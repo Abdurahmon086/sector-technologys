@@ -1,4 +1,4 @@
-import Logo from "@/components/cards/category-card";
+import Logo from '@/components/share/logo'
 import { headerData } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
@@ -45,7 +45,7 @@ const Header = () => {
                         <div className="flex items-center justify-between py-2">
                             <div className="flex items-center gap-4">
                                 <button className="flex items-center gap-3 bg-primery rounded-[9px] py-3 px-7 text-white font-bold text-sm transition-colors hover:bg-blue-600">
-                                    <Image src="/icons/vector.svg" alt="vector" width={18} height={18} />
+                                    <Image src="/icons/horizontal-divider.svg" alt="horizontal-divider icon" width={18} height={18} />
                                     Каталог товаров
                                 </button>
                                 <div className="flex items-center gap-2">
@@ -56,15 +56,15 @@ const Header = () => {
                             </div>
 
                             <ul className="flex items-center justify-between w-[485px] text-textColor text-sm">
-                                <li className='flex items-center gap-0.5'>
+                                <li className="flex items-center gap-0.5">
                                     Покупателям
                                     <Image src="/icons/down.svg" alt="down icon" width={16} height={5} />
                                 </li>
-                                <li className='flex items-center gap-0.5'>
+                                <li className="flex items-center gap-0.5">
                                     Услуги
                                     <Image src="/icons/down.svg" alt="down icon" width={16} height={5} />
                                 </li>
-                                <li className='flex items-center gap-0.5'>
+                                <li className="flex items-center gap-0.5">
                                     О нас
                                     <Image src="/icons/down.svg" alt="down icon" width={16} height={5} />
                                 </li>
