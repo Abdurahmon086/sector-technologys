@@ -26,6 +26,10 @@ body {
     font-weight: 400;
 }
 
+.header-shadow {
+    box-shadow: 0 -5 30 0 #00000026;
+}
+
 .main-title {
     @apply text-textColor font-bold text-[32px];
 }
