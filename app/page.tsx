@@ -173,17 +173,17 @@ export default function Home() {
                                 <img src="/images/ru.png" alt="ru flag" />
                                 <p>Ru</p>
                             </div>
-                            <img src="" alt="" />
-                            <img src="" alt="" />
-                            <img src="" alt="" />
+                            <img src="/icons/mark.svg" alt="mark icon" />
+                            <img src="/icons/chart.svg" alt="chart icon" />
+                            <img src="/icons/share.svg" alt="share icon" />
                             <button>
-                                <img src="" alt="" />
+                                <img src="/icons/chat.svg" alt="chat icon" />
                             </button>
                         </div>
                         <div className="">
-                            <img src="" alt="" />
+                            <img src="/icons/circle-right.svg" alt="circle-right icon" />
                             <button>
-                                <img src="" alt="" />
+                                <img src="/icons/top.svg" alt="top icon" />
                             </button>
                         </div>
                     </div>
