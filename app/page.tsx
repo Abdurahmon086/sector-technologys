@@ -1,4 +1,6 @@
+import BrandCard from "@/components/cards/brand-card";
 import CategoryCard from "@/components/cards/category-card";
+import Logo from "@/components/share/logo";
 import { headerData } from "@/constants";
 
 export default function Home() {
@@ -21,22 +23,171 @@ export default function Home() {
                         </li>
                     </ul>
                 </section>
-                <section className="container">
+                <section className="container mt-10">
                     <h3 className="main-title">Популярные бренды</h3>
-                    <ul>
+                    <ul className="mt-5 grid grid-cols-6 gap-10">
                         {headerData.map((item) => (
                             <li key={item.id}>
-                                <CategoryCard />
+                                <BrandCard />
                             </li>
                         ))}
+                        <li>
+                            <BrandCard last />
+                        </li>
                     </ul>
                 </section>
-                <section className="container">
+                <section className="container mt-16">
                     <div className="flex items-start gap-3">
-                        <aside className="h-[325px]">asdasd</aside>
-                        <div className=""> asdasd</div>
+                        <aside className="w-[325px]">
+                            <div className="">
+                                <div className="">
+                                    <div className="">
+                                        <h4>Новости </h4>
+                                        <img src="" alt="" />
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <h4>Новая серия сварочных аппаратов SNR- FS-60x уже на складе</h4>
+                                            <div className="">
+                                                <img src="" alt="" />
+                                                <span>18 апреля 2024 г.</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h4>Читайте статью: Что такое PoE и для чего он нужен?</h4>
+                                            <div className="">
+                                                <img src="" alt="" />
+                                                <span>29 марта 2024 г.</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="">
+                                    <h4>Наши проекты</h4>
+                                    <ul>
+                                        <li>
+                                            <img src="" alt="" />
+                                            <p>snr.systems</p>
+                                        </li>
+                                        <li>
+                                            <img src="" alt="" />
+                                            <p>Конфигураторы</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="">
+                                    <h4>Как мы работаем</h4>
+                                    <ul>
+                                        <li>
+                                            <img src="" alt="" />
+                                            <p>Способы оплаты</p>
+                                        </li>
+                                        <li>
+                                            <img src="" alt="" />
+                                            <p>Условия доставки</p>
+                                        </li>
+                                        <li>
+                                            <img src="" alt="" />
+                                            <p>Гарантийное обслуживание</p>
+                                        </li>
+                                        <li>
+                                            <img src="" alt="" />
+                                            <p>Возврат товара</p>
+                                        </li>
+                                        <li>
+                                            <img src="" alt="" />
+                                            <p>Вопросы и ответы</p>
+                                        </li>
+                                        <li>
+                                            <img src="" alt="" />
+                                            <p>Техническая поддержка</p>
+                                        </li>
+                                        <li>
+                                            <img src="" alt="" />
+                                            <p>База знаний</p>
+                                        </li>
+                                        <li>
+                                            <img src="" alt="" />
+                                            <p>Конфигураторы</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                        <div className="">
+                            <div className="">
+                                <ul>
+                                    <li>Рекомендуем</li>
+                                    <li>Новинки</li>
+                                    <li>Акции</li>
+                                    <li>Товары со скидкой</li>
+                                    <li>Популярное</li>
+                                </ul>
+                            </div>
+
+                            <div className="">
+                                <ul>
+                                    <li>
+                                        <div className="">
+                                            <img src="" alt="" />
+                                            <span>Новинка</span>
+                                        </div>
+                                        <div className="">
+                                            <div className="">
+                                                <h4>Витая пара FTP кат.5Е, 4 пары, серый ПВХ, бухта 305м, для внутренней прокладки, экранированный</h4>
+
+                                                <img src="" alt="" />
+                                            </div>
+                                            <div className="">
+                                                <h4>FTP4CAT5e PVC-2414</h4>
+
+                                                <img src="" alt="" />
+                                            </div>
+                                            <span>В наличии: 10 уп</span>
+
+                                            <div className="">
+                                                <h4>911 374 сум</h4>
+                                                <img src="" alt="" />
+                                                <img src="" alt="" />
+                                                <button>
+                                                    <img src="" alt="" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </section>
+
+                <aside>
+                    <div className="flex flex-col items-center justify-between">
+                        <div className="">
+                            <Logo />
+                            <div className="">
+                                <img src="/images/uz.png" alt="uzb flag" />
+                                <p>Uz</p>
+                            </div>
+                            <div className="">
+                                <img src="/images/ru.png" alt="ru flag" />
+                                <p>Ru</p>
+                            </div>
+                            <img src="" alt="" />
+                            <img src="" alt="" />
+                            <img src="" alt="" />
+                            <button>
+                                <img src="" alt="" />
+                            </button>
+                        </div>
+                        <div className="">
+                            <img src="" alt="" />
+                            <button>
+                                <img src="" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </aside>
 
                 <section className="container">
                     <div className="textura p-[30px]">
