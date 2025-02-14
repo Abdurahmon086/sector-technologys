@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Footer from "./_components/footer";
 import Header from "./_components/header";
 import "./globals.css";
+import Asider from './_components/asider'
 
 export const metadata: Metadata = {
     title: "Sector Technology",
@@ -23,6 +24,9 @@ export default function RootLayout({
                 <footer>
                     <Footer />
                 </footer>
+                <aside className='fixed top-52 right-0'>
+                    <Asider />
+                </aside>
             </body>
         </html>
     );
