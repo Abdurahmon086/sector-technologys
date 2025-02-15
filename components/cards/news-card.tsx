@@ -4,7 +4,7 @@ function NewsCard() {
 	return (
 		<div className='border border-[#EEEEEE] rounded-[11px] p-[13px] '>
 			<div className='relative w-full h-[234.63] object-fill'>
-				<Image src='/images/set-img.jpg' alt='set-img image' fill />
+				<Image src='/images/set-img.png' alt='set-img image' fill />
 				<span className='absolute top-2 left-0.5 py-[3px] px-4 bg-[#F3F9F1] rounded-md border border-[#6AB04C] text-[#6AB04C] text-sm font-semibold '>
 					Новинка
 				</span>
